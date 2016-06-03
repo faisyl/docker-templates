@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Minio</Name>
+  <Overview>
+    minio is the best s3 server
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39707.0</Support>
+  <Description>
+   Minio is the bes
+  </Description>
+  <Registry>https://hub.docker.com/r/minio/minio/</Registry>
+  <Github>https://github.com/minio/minio</Github>
+  <Repository>minio/minio</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>9000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt</HostDir>
+      <ContainerDir>/export</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/</HostDir>
+      <ContainerDir>/root/.minio</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>latest</Version>
+  <WebUI>http://[IP]:[PORT:9000]/</WebUI>
+  <Banner>https://i.imgur.com/fyjvW91.png</Banner>
+  <Icon>https://i.imgur.com/Lj5l0ni.png</Icon>
+  <ExtraParams>/export</ExtraParams>
+  <Beta>False</Beta>
+  <Category>Tools:</Category>  
+</Container>
