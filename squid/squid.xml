@@ -13,7 +13,16 @@
   <Repository>jpetazzo/squid-in-a-can</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Name>MAX_CACHE_OBJECT</Name>
+      <Value>2048</Value>
+    </Variable>
+    <Variable>
+      <Name>DISK_CACHE_SIZE</Name>
+      <Value>100000</Value>
+    </Variable>
+  </Environment>
   <Networking>
     <Mode>host</Mode>
     <Publish>
