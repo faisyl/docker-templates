@@ -36,17 +36,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>path/to/plex/database</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path/to/transcode/temp</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/transcode</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path/to/media</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
